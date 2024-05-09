@@ -28,7 +28,7 @@
     </div>
 
     <!-- notes -->
-    <div id="notes" class="floating-window" onclick="focusInputLine()">
+    <div id="notes" class="floating-window">
       <div id="notesheader" class="applicationheader">Notes</div>
       <div class="notesContent">
         <!-- left side of notes -->
@@ -93,6 +93,12 @@
       </div>
     </div>
 
+    <!-- contact -->
+    <div id="contact" class="floating-window">
+      <div id="contactheader" class="applicationheader">Contact Me!</div>
+      <div class="contactForm"></div>
+    </div>
+
     <!-- dock -->
     <div class="dock">
       <a href="https://github.com/fralnz" target="_blank"
@@ -101,9 +107,11 @@
       <a href="https://github.com/" target="_blank"
         ><img src="media/icons/addressbook.svg" alt="contacts"
       /></a>
-      <a href="https://github.com/" target="_blank"
-        ><img src="media/icons/internet-mail.svg" alt="mail"
-      /></a>
+      <img
+        src="media/icons/internet-mail.svg"
+        alt="mail"
+        onclick="showWindow('contact')"
+      />
       <img
         src="media/icons/terminal.svg"
         alt="terminal"
