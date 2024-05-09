@@ -1,13 +1,13 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Cantarell;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Cantarell;
 }
 
 @font-face {
-    font-family: Cantarell;
-    src: url("media/font/Cantarell-VF.otf");
+  font-family: Cantarell;
+  src: url("media/font/Cantarell-VF.otf");
 }
 
 /* Base styles */
@@ -42,8 +42,7 @@ body {
   }
 }
 
-
-header{
+header {
   display: flex;
   background-color: rgba(51, 51, 51, 0.196);
   padding: 0;
@@ -51,11 +50,11 @@ header{
   height: 2em;
 }
 
-header p{
+header p {
   align-self: center;
   font-weight: 600;
   color: white;
-  padding: .6em;
+  padding: 0.6em;
 }
 
 .dock {
@@ -68,7 +67,7 @@ header p{
   height: 7em; /* Example height, adjust based on content or desired size */
   align-self: center;
   padding: 0.3em 1em;
-  margin-bottom:.5em;
+  margin-bottom: 0.5em;
 }
 
 .dock a {
@@ -86,24 +85,24 @@ header p{
   margin: 0.4em;
 }
 
-.dock img:hover{
+.dock img:hover {
   height: 6em;
 }
 
-.folder{
+.folder {
   display: flex;
   flex-direction: column;
   width: 5em; /* Adjusted width to fit both image and text */
-  margin: .3em;
+  margin: 0.3em;
 }
 
-.folder img{
+.folder img {
   width: 100%;
 }
 
-.folder p{
+.folder p {
   color: white;
-  font-size: .8em; /* Set font size relative to the viewport width */
+  font-size: 0.8em; /* Set font size relative to the viewport width */
   align-self: center;
   font-weight: 750;
   width: 100%;
