@@ -72,6 +72,7 @@ function executeCommand(command) {
   switch (command) {
     case "help":
       output = "inculati";
+      break
     case "":
       output = "";
   }
