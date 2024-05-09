@@ -1,0 +1,17 @@
+#notes{
+    border: 1px solid #444444;
+    color: white;
+  }
+
+#notesheader {
+    background-color: #444444;
+    color: white;
+    padding: 0 0.2em;
+  }
+
+.notesContent{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #5c5c5c;
+}

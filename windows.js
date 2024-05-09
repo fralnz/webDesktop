@@ -1,7 +1,7 @@
 // Make the DIV element draggable:
 function showWindow(id) {
-  let elmnt = document.getElementById("terminal");
-  document.getElementById("terminal").style.display = "block";
+  let elmnt = document.getElementById(id);
+  document.getElementById(id).style.display = "block";
   dragElement(elmnt);
   console.log("show window");
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="terminal.css" />
+    <link rel="stylesheet" href="window-style/notes.css" />
+    <link rel="stylesheet" href="window-style/terminal.css" />
     <script defer src="windows.js"></script>
     <title>Francesco Lanza</title>
   </head>
@@ -12,12 +13,13 @@
     <header>
       <p>File</p>
     </header>
-
+    <!-- folder -->
     <div class="folder">
       <img src="media/icons/folder.svg" alt="folder" width="5%" />
       <p>PROJECTS</p>
     </div>
 
+    <!-- terminal -->
     <div id="terminal" class="floating-window" onclick="focusInputLine()">
       <div id="terminalheader">Terminal</div>
       <div id="output"></div>
@@ -25,6 +27,16 @@
       <span id="inputLine" contenteditable="true"></span>
     </div>
 
+    <!-- notes -->
+    <div id="notes" class="floating-window" onclick="focusInputLine()">
+      <div id="notesheader">Notes</div>
+      <div class="notesContent">
+        <div class="notesLeft"></div>
+        <div class="notesRight"></div>
+      </div>
+    </div>
+
+    <!-- dock -->
     <div class="dock">
       <a href="https://github.com/fralnz" target="_blank"
         ><img src="media/icons/github-desktop.svg" alt="github"
@@ -38,10 +50,12 @@
       <img
         src="media/icons/terminal.svg"
         alt="terminal"
-        onclick="showWindow(terminal)"
+        onclick="showWindow('terminal')"
       />
-      <a href="https://fralnz.github.io/appunti/" target="_blank"
-        ><img src="media/icons/basket.svg" alt="notes"
+      <img
+        src="media/icons/basket.svg"
+        alt="notes"
+        onclick="showWindow('notes')"
       /></a>
       <a href="https://fralnz.github.io/appunti/" target="_blank"
         ><img src="media/icons/obsidian.svg" alt="notes"
