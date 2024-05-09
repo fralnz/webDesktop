@@ -10,24 +10,38 @@
     src: url("media/font/Cantarell-VF.otf");
 }
 
+/* Base styles */
 body {
   background-image: url("media/background.jpg");
-  /* Ensure the image covers the entire container */
   background-size: cover;
-
-  /* Center the background image */
   background-position: center;
-
-  /* Ensure the image does not repeat */
   background-repeat: no-repeat;
-
-  /* Optional: Set a minimum height for the container to ensure the image is visible */
-  min-height: 100vh; /* Adjust this value as needed */
-  /* Hide the scrollbar */
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  font-size: 1rem; /* Use relative font size */
+  line-height: 1.5; /* Adjust line height for readability */
+  color: #333; /* Set a base text color */
+  margin: 0;
+  padding: 0;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
+    padding: 10px; /* Add some padding for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8rem; /* Even smaller font size for very small screens */
+    padding: 20px; /* Increase padding for very small screens */
+  }
+}
+
 
 header{
   display: flex;
@@ -51,10 +65,9 @@ header p{
   backdrop-filter: blur(5px);
   margin-top: auto;
   border-radius: 14px;
-  width: 50%;
   height: 6em; /* Example height, adjust based on content or desired size */
   align-self: center;
-  padding: 0.3em;
+  padding: 0.3em .5em;
   margin-bottom:.5em;
 }
 
@@ -80,7 +93,7 @@ header p{
 .folder{
   display: flex;
   flex-direction: column;
-  width: 5%;
+  width: 5em; /* Adjusted width to fit both image and text */
   margin: .3em;
 }
 
@@ -90,7 +103,9 @@ header p{
 
 .folder p{
   color: white;
-  font-size: .9em;
+  font-size: .8em; /* Set font size relative to the viewport width */
   align-self: center;
   font-weight: 750;
+  width: 100%;
+  text-align: center; /* Center-align the text */
 }
