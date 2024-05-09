@@ -6,18 +6,18 @@
   transform: translate(-50%, -50%);
 }
 
+.applicationheader{
+  background-color: #444444;
+  color: white;
+  padding: 0 0.2em;
+}
+
 #terminal {
   width: 45em;
   height: 25em;
   background-color: #000000;
   border: 1px solid #444444;
   color: white;
-}
-
-#terminalheader {
-  background-color: #444444;
-  color: white;
-  padding: 0 0.2em;
 }
 
 #inputLine:focus {
