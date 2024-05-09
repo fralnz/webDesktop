@@ -6,6 +6,7 @@ function showWindow(id){
     console.log("show window")
 }
 
+
 function dragElement(elmnt) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     if (document.getElementById(elmnt.id + "header")) {
@@ -43,4 +44,39 @@ function dragElement(elmnt) {
         document.onmouseup = null;
         document.onmousemove = null;
     }
+}
+
+// Add event listener to handle terminal input
+document.getElementById('inputLine').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        // Execute command
+        let command = this.innerText;
+        executeCommand(command);
+        // Clear input
+        this.innerText = '';
+    }
+});
+
+function focusInputLine() {
+    document.getElementById('inputLine').focus();
+}
+
+function executeCommand(command) {
+    let output = 'Unknown command: ' + command;
+    // TODO: Implement command execution
+    switch (command){
+        case "help":
+            output = "inculati"
+    }
+    // Display output
+    displayOutput(output);
+}
+
+function displayOutput(output) {
+    let outputElement = document.createElement('p');
+    outputElement.innerText = output;
+    let terminalDiv = document.getElementById('terminal');
+    let inputLine = document.getElementById('inputLine');
+    terminalDiv.insertBefore(outputElement, inputLine);
 }

@@ -18,9 +18,11 @@
       <p>PROJECTS</p>
     </div>
 
-    <div id="terminal" class="floating-window">
-      <div class="applicationheader">Terminal</div>
-      <p>Type here</p>
+    <div id="terminal" class="floating-window" onclick="focusInputLine()">
+      <div id="terminalheader">Terminal</div>
+      <div id="output"></div>
+      <p>&gt</p>
+      <span id="inputLine" contenteditable="true"></span>
   </div>
 
     <div class="dock">

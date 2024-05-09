@@ -9,9 +9,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
 }
-.floating-window .applicationheader{
+#terminalheader{
     background-color: #444444;
     color: white;
     padding: 0 .2em;
+}
+
+#inputLine:focus {
+    outline: none;
 }

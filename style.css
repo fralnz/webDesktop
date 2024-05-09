@@ -65,9 +65,9 @@ header p{
   backdrop-filter: blur(5px);
   margin-top: auto;
   border-radius: 14px;
-  height: 6em; /* Example height, adjust based on content or desired size */
+  height: 7em; /* Example height, adjust based on content or desired size */
   align-self: center;
-  padding: 0.3em .5em;
+  padding: 0.3em 1em;
   margin-bottom:.5em;
 }
 
