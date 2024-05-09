@@ -76,3 +76,21 @@ header p{
 .dock img:hover{
   height: 6em;
 }
+
+.folder{
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  margin: .3em;
+}
+
+.folder img{
+  width: 100%;
+}
+
+.folder p{
+  color: white;
+  font-size: .9em;
+  align-self: center;
+  font-weight: 750;
+}
