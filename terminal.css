@@ -1,8 +1,17 @@
-#terminal{
-    background-color: black;
-    border-radius: 5%;
-    display: none;
+.floating-window {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    background-color: #000000;
+    border: 1px solid #444444;
+    cursor: move;
+    display: none; /* Add this line */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-#terminalheader{
-    background-color: grey;
+.floating-window .applicationheader{
+    background-color: #444444;
+    color: white;
+    padding: 0 .2em;
 }
