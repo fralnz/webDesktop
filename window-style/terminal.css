@@ -1,14 +1,14 @@
 .floating-window {
   position: absolute;
-  width: 25%;
-  height: 30%;
-  display: none; /* Add this line */
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#terminal{
+#terminal {
+  width: 45em;
+  height: 25em;
   background-color: #000000;
   border: 1px solid #444444;
   color: white;

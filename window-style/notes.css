@@ -1,17 +1,62 @@
-#notes{
-    border: 1px solid #444444;
-    color: white;
-  }
+#notes {
+  border: 0;
+  color: white;
+  width: 45em;
+  height: 34em;
+}
 
 #notesheader {
-    background-color: #444444;
-    color: white;
-    padding: 0 0.2em;
-  }
+  background-color: #444444;
+  color: white;
+  padding: 0 0.2em;
+}
 
-.notesContent{
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: #5c5c5c;
+.notesContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.notesLeft {
+  background-color: #1f1f20;
+  width: 30%;
+  height: 100%;
+}
+.notesRight {
+  background-color: #1b1a19;
+  height: 100%;
+  width: 70%;
+}
+
+.noteEntry {
+  justify-content: center;
+  background-color: rgba(215, 215, 215, 0.112);
+  margin-top: auto;
+  border-radius: 20px;
+  padding: 0.3em 1em;
+  margin: 1em;
+}
+
+.noteEntry p {
+  align-self: center;
+  font-weight: 600;
+}
+
+.noteEntry .date {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+.notesRight {
+  padding: 0.8em;
+  overflow: auto;
+}
+
+.notesRight h4 {
+  color: #ffbf00;
+  text-decoration: underline;
+}
+
+.notesRight ul {
+  margin-left: 1.5em;
 }
