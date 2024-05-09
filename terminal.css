@@ -1,0 +1,8 @@
+#terminal{
+    background-color: black;
+    border-radius: 5%;
+    display: none;
+}
+#terminalheader{
+    background-color: grey;
+}

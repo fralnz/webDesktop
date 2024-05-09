@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="terminal.css">
+    <script defer src="windows.js"></script>
     <title>Francesco Lanza</title>
 </head>
 <body>
@@ -15,6 +17,15 @@
       <img src="media/icons/folder.svg" alt="folder" width="5%">
       <p>PROJECTS</p>
     </div>
+
+    <div id="terminal" class="floating-window">
+      <div class="terminalheader">Click here to move</div>
+      <p>Move</p>
+      <p>this</p>
+      <p>DIV</p>
+  </div>
+
+  <button id="showButton" onclick=showWindow(terminal)>Show floating window</button>
 
     <div class="dock">
         <a href="https://github.com/fralnz" target="_blank"><img src="media/icons/github-desktop.svg" alt="github"></a>
