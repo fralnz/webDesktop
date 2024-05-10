@@ -106,6 +106,7 @@ header p {
   flex-direction: column;
   width: 5em; /* Adjusted width to fit both image and text */
   margin: 0.3em;
+  cursor: pointer;
 }
 
 .folder img {
