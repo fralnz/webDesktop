@@ -90,17 +90,6 @@ header p {
   height: 6em;
 }
 
-.dock img:hover::after {
-  content: attr(data-alt); /* Display the alt text */
-  position: absolute;
-  bottom: 100%; /* Position the alt text below the image */
-  background-color: #333; /* Background color for the alt text box */
-  color: #fff; /* Text color */
-  padding: 5px; /* Some padding around the text */
-  border-radius: 5px; /* Rounded corners */
-  white-space: nowrap; /* Prevents the text from wrapping */
-}
-
 .folder {
   display: flex;
   flex-direction: column;
