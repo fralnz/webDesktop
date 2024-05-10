@@ -4,20 +4,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
 }
 
 .applicationheader{
   background-color: #444444;
   color: white;
   padding: 0 0.2em;
+  font-family: Cantarell;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #terminal {
+  background-color: #000000;
   width: 45em;
   height: 25em;
-  background-color: #000000;
-  border: 1px solid #444444;
+  border: 0;
   color: white;
+}
+
+#output{
+  background-color: #000000;
+  padding: .5rem;
 }
 
 #inputLine:focus {

@@ -1,8 +1,15 @@
 // Make the DIV element draggable:
 function showWindow(id) {
   let elmnt = document.getElementById(id);
-  document.getElementById(id).style.display = "block";
+  elmnt.style.transition = "opacity 0.2s ease, box-shadow 0.2s ease"; // Apply transition effect to opacity and box-shadow
+  elmnt.style.opacity = "0"; // Initially set opacity to 0
+  elmnt.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0)"; // Initially set box-shadow to none
+  elmnt.style.display = "block";
   dragElement(elmnt);
+  // Trigger reflow before changing opacity to ensure transition is applied
+  void elmnt.offsetWidth; 
+  elmnt.style.opacity = "1"; // Change opacity to 1 to make it visible smoothly
+  elmnt.style.boxShadow = "5px 5px 10px rgba(0, 0, 0, 0.5)"; // Add box-shadow with desired parameters (5px offset to the lower right)
   console.log("show window");
 }
 
