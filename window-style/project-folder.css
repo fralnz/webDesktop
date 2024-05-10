@@ -1,0 +1,22 @@
+#project-folder {
+  border: 0;
+  background-color: #4b4748;
+  width: 45em;
+  height: 26em;
+}
+.file-manager {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.file-manager-left {
+  background-color: #4b4748;
+  width: 30%;
+  height: 100%;
+}
+.file-manager-right {
+  background-color: #1b1a19;
+  height: 100%;
+  width: 70%;
+}
