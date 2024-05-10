@@ -83,10 +83,22 @@ header p {
   align-self: center;
   transition: 0.2s ease-in-out;
   margin: 0.4em;
+  display: inline-block;
 }
 
 .dock img:hover {
   height: 6em;
+}
+
+.dock img:hover::after {
+  content: attr(data-alt); /* Display the alt text */
+  position: absolute;
+  bottom: 100%; /* Position the alt text below the image */
+  background-color: #333; /* Background color for the alt text box */
+  color: #fff; /* Text color */
+  padding: 5px; /* Some padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  white-space: nowrap; /* Prevents the text from wrapping */
 }
 
 .folder {

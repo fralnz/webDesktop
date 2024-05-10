@@ -7,10 +7,42 @@ function showWindow(id) {
   elmnt.style.display = "block";
   dragElement(elmnt);
   // Trigger reflow before changing opacity to ensure transition is applied
-  void elmnt.offsetWidth; 
+  void elmnt.offsetWidth;
   elmnt.style.opacity = "1"; // Change opacity to 1 to make it visible smoothly
   elmnt.style.boxShadow = "5px 5px 10px rgba(0, 0, 0, 0.5)"; // Add box-shadow with desired parameters (5px offset to the lower right)
   console.log("show window");
+
+  // Add close button
+  addCloseButton(elmnt);
+}
+
+function addCloseButton(elmnt) {
+  // Check if a close button already exists
+  if (!document.getElementById(elmnt.id + "CloseButton")) {
+    // Create close button
+    let closeButton = document.createElement("img");
+    closeButton.setAttribute("src", "../media/icons/close-normal.svg");
+    closeButton.addEventListener("mouseover", () => {
+      closeButton.src = "../media/icons/close-hover.svg";
+    });
+    closeButton.addEventListener("mouseout", () => {
+      closeButton.src = "../media/icons/close-normal.svg";
+    });
+    closeButton.classList.add("close-button");
+    closeButton.id = elmnt.id + "CloseButton"; // Assign an id to the close button
+
+    // Append close button to header
+    let header = document.getElementById(elmnt.id + "header");
+    header.appendChild(closeButton);
+
+    // Add event listener to close button
+    closeButton.addEventListener("click", function () {
+      elmnt.style.opacity = "0"; // Set opacity to 0 to hide the window
+      setTimeout(function () {
+        elmnt.style.display = "none"; // Hide the window
+      }, 200); // Wait for the transition to complete (0.2s)
+    });
+  }
 }
 
 function dragElement(elmnt) {
