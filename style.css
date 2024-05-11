@@ -5,6 +5,27 @@
   font-family: Cantarell;
 }
 
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000000; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scroll thumb on hover */
+}
+
 @font-face {
   font-family: Cantarell;
   src: url("media/font/Cantarell-VF.otf");

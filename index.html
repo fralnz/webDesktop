@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="window-style/application.css">
+    <link rel="stylesheet" href="window-style/application.css" />
     <link rel="stylesheet" href="window-style/notes.css" />
     <link rel="stylesheet" href="window-style/terminal.css" />
     <link rel="stylesheet" href="window-style/obsidian.css" />
@@ -26,7 +26,7 @@
 
     <!-- terminal -->
     <div id="terminal" class="floating-window" onclick="focusInputLine()">
-      <div id="terminalheader" class="applicationheader">Terminal</div>
+      <div id="terminalheader" class="applicationheader"><p>Terminal</p></div>
       <div id="output"></div>
       <p>&gt</p>
       <span id="inputLine" contenteditable="true"></span>
@@ -34,7 +34,7 @@
 
     <!-- notes -->
     <div id="notes" class="floating-window">
-      <div id="notesheader" class="applicationheader">Notes</div>
+      <div id="notesheader" class="applicationheader"><p>Notes</p></div>
       <div class="notesContent">
         <!-- left side of notes -->
         <div class="notesLeft">
@@ -122,37 +122,43 @@
 
     <!-- file manager -->
     <div id="project-folder" class="floating-window">
-      <div id="project-folderheader" class="applicationheader">PROJECTS</div>
+      <div id="project-folderheader" class="applicationheader">
+        <p>PROJECTS</p>
+      </div>
       <div class="file-manager">
         <div class="file-manager-left">
           <div class="file-manager-section">
             <svg width="50" height="50">
-              <image href="media/icons/folder/recent.svg"/>
+              <image href="media/icons/folder/recent.svg" />
             </svg>
             <p>Recent</p>
           </div>
           <div id="folder-selected" class="file-manager-section">
             <svg width="50" height="50">
-              <image href="media/icons/folder/starred.svg"/>
+              <image href="media/icons/folder/starred.svg" />
             </svg>
             <p>Projects</p>
           </div>
           <div class="file-manager-section">
             <svg width="50" height="50">
-              <image href="media/icons/folder/home.svg"/>
+              <image href="media/icons/folder/home.svg" />
             </svg>
             <p>Home</p>
           </div>
           <div class="file-manager-section">
             <svg width="50" height="50">
-              <image href="media/icons/folder/documents.svg"/>
+              <image href="media/icons/folder/documents.svg" />
             </svg>
             <p>Documents</p>
           </div>
         </div>
         <div class="file-manager-right">
           <div class="folder-icon-container">
-            <a href="https://github.com/RiccardoSilvestri/NetNote" target="_blank"><img src="media/icons/folder/NetNote.png" alt="NetNote"></a>
+            <a
+              href="https://github.com/RiccardoSilvestri/NetNote"
+              target="_blank"
+              ><img src="media/icons/folder/NetNote.png" alt="NetNote"
+            /></a>
             <p>NetNote</p>
           </div>
         </div>
@@ -161,7 +167,9 @@
 
     <!-- dock -->
     <div class="dock">
-      <a href="https://www.linkedin.com/in/francesco-lanza-4a2353249/" target="_blank"
+      <a
+        href="https://www.linkedin.com/in/francesco-lanza-4a2353249/"
+        target="_blank"
         ><img src="media/icons/addressbook.svg" alt="contacts"
       /></a>
       <img

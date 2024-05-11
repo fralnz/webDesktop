@@ -9,17 +9,21 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  height: 32em;
 }
 .notesLeft {
   background-color: #1f1f20;
   width: 30%;
   height: 100%;
+  border-bottom-left-radius: 10px;
 }
 .notesRight {
   background-color: #1b1a19;
   height: 100%;
   width: 70%;
+  border-bottom-right-radius: 10px;
+  padding: 0.8em;
+  overflow: auto;
 }
 
 .noteEntry {
@@ -39,11 +43,6 @@
 .noteEntry .date {
   font-size: 0.7em;
   font-weight: lighter;
-}
-
-.notesRight {
-  padding: 0.8em;
-  overflow: auto;
 }
 
 .notesRight h4 {

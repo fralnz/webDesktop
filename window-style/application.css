@@ -9,17 +9,28 @@
 
 .applicationheader {
   background-color: #444444;
+  height: 2em;
   color: white;
   padding: 0 0.5em;
   font-family: Cantarell;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.close-button{
-    height: 1em;
-    align-self: center;
-    cursor: pointer;
-    align-content: center;
+
+.applicationheader p {
+  margin: 0;
+  text-align: center;
+  cursor: default;
+  font-weight: bold;
+}
+
+.close-button {
+  height: 1em;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
 }
