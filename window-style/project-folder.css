@@ -13,11 +13,83 @@
 .file-manager-left {
   width: 25%;
   height: 100%;
+  background-color: #303030;
   border-right: 1px black solid;
   border-top: 1px black solid;
+  border-bottom-left-radius: 10px;
 }
 .file-manager-right {
   height: 100%;
   width: 75%;
   border-top: 1px black solid;
+  padding: 1em;
+}
+
+.file-manager-section {
+  display: flex;
+  align-items: center;
+  margin: 0.3em;
+  height: 2em;
+  gap: 0.1em;
+  color: white;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#folder-selected {
+  background-color: rgba(215, 215, 215, 0.112);
+}
+
+.file-manager-section svg {
+  margin-left: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0.4em;
+}
+
+.file-manager-section p {
+  margin: 0;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-manager-section svg image {
+  filter: invert(1);
+  width: 100%;
+  height: 100%;
+}
+
+.folder-icon-container {
+  width: 7em;
+  height: 7em;
+  padding: .2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: .1s;
+}
+
+.folder-icon-container a{
+  display: flex; /* Ensure the anchor tag acts as a flex container */
+  justify-content: center; /* Center the image within the anchor tag */
+  align-items: center; /* Vertically center the image */
+  margin: 0;
+  padding: 0;
+}
+
+.folder-icon-container img {
+  width: 5em;
+  align-self: center;
+}
+
+.folder-icon-container p {
+  color: white;
+  align-self: center;
+}
+
+.folder-icon-container:hover {
+  background-color: rgba(215, 215, 215, 0.112);
+  border-radius: 10px;
 }
