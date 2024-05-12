@@ -8,7 +8,7 @@
 .mobile header {
   color: white;
   font-weight: bold;
-  padding: 1.5em;
+  padding: 1.2em;
   display: flex;
   justify-content: space-between;
 }
@@ -25,13 +25,30 @@
   gap: 0.2rem;
 }
 
-.signal svg {
+.mobile svg {
   width: 1.3rem;
   height: 1.3em;
   margin-top: 0.1rem;
 }
-.signal svg image {
+.mobile svg image {
   filter: invert(1);
   width: 100%;
   height: 100%;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12%;
+}
+
+.mobile footer svg{
+  width: 4rem;
+  height: 4rem;
+  opacity: 50%;
 }
