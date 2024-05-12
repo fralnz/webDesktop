@@ -1,0 +1,93 @@
+.desktop {
+    background-image: url("media/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This should push the dock to the bottom */
+  }
+  
+  .desktop header {
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.196);
+    padding: 0;
+    width: 100%;
+    height: 2em;
+  }
+  
+  .desktop header p {
+    align-self: center;
+    font-weight: 600;
+    color: white;
+    padding: 0.6em;
+  }
+  
+  .dock {
+    position: fixed; /* Position the dock relative to the viewport */
+    bottom: 0; /* Align the dock to the bottom of the viewport */
+    left: 50%; /* Move the dock to the horizontal center */
+    transform: translateX(-50%); /* Center the dock horizontally */
+    width: auto; /* Allow the width to adjust based on content */
+    display: flex;
+    justify-content: center;
+    background-color: rgba(215, 215, 215, 0.112);
+    backdrop-filter: blur(5px);
+    border-radius: 14px;
+    height: 7em;
+    padding: 0.3em 1em;
+    margin-bottom: .5rem; /* Remove any default margin */
+  }
+  
+  
+  .dock a {
+    display: flex; /* Ensure the anchor tag acts as a flex container */
+    justify-content: center; /* Center the image within the anchor tag */
+    align-items: center; /* Vertically center the image */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dock img {
+    height: 5em;
+    align-self: center;
+    transition: 0.2s ease-in-out;
+    margin: 0.4em;
+    display: inline-block;
+  }
+  
+  .dock img:hover {
+    height: 6em;
+  }
+  
+  .folder {
+    display: flex;
+    flex-direction: column;
+    width: 5em; /* Adjusted width to fit both image and text */
+    margin: 0.3em;
+    cursor: pointer;
+  }
+  
+  .folder img {
+    width: 100%;
+  }
+  
+  .folder p {
+    color: white;
+    font-size: 0.8em; /* Set font size relative to the viewport width */
+    align-self: center;
+    font-weight: 750;
+    width: 100%;
+    text-align: center; /* Center-align the text */
+  }
+  
+  .floating-window {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+  }

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="window-style/application.css" />
     <link rel="stylesheet" href="window-style/notes.css" />
@@ -15,192 +17,215 @@
     <title>Francesco Lanza</title>
   </head>
   <body>
-    <header>
-      <p>File</p>
-    </header>
-    <!-- folder icon -->
-    <div class="folder" onclick="showWindow('project-folder')">
-      <img src="media/icons/folder.svg" alt="folder" width="5%" />
-      <p>PROJECTS</p>
-    </div>
-
-    <!-- terminal -->
-    <div id="terminal" class="floating-window" onclick="focusInputLine()">
-      <div id="terminalheader" class="applicationheader"><p>Terminal</p></div>
-      <div id="output"></div>
-      <p>&gt</p>
-      <span id="inputLine" contenteditable="true"></span>
-    </div>
-
-    <!-- notes -->
-    <div id="notes" class="floating-window">
-      <div id="notesheader" class="applicationheader"><p>Notes</p></div>
-      <div class="notesContent">
-        <!-- left side of notes -->
-        <div class="notesLeft">
-          <div class="noteEntry">
-            <p>DELICIOUS RECIPES</p>
-            <p class="date">09/05/2024</p>
-          </div>
-        </div>
-        <div class="notesRight">
-          <!-- pudding -->
-          <h4>Butter-Free Chocolate Pudding</h4>
-          <b>Ingredients:</b>
-          <ul>
-            <li>Milk (250g)</li>
-            <li>Sugar (50g)</li>
-            <li>Cornstarch (20g)</li>
-            <li>Dark chocolate (70g)</li>
-          </ul>
-
-          <b>Instructions:</b>
-          <p>
-            Pour the milk into a saucepan and heat it until it almost boils.
-            Meanwhile, partially melt the chocolate (about 1 minute in the
-            microwave) and mix it well.<br />Combine the melted chocolate with
-            the cornstarch to avoid lumps, stirring with a whisk (you can add a
-            spoonful of the heated milk to facilitate melting).<br />After
-            mixing well, add everything to the saucepan with the milk, kept on
-            low heat. Cook the pudding for a few minutes (continue stirring),
-            then remove from heat and divide it into containers.<br />Let it
-            cool and serve.
-          </p>
-
-          <!-- fritters -->
-          <h4>Fritters</h4>
-          <b>Ingredients:</b>
-          <ul>
-            <li>Flour (300g)</li>
-            <li>Vegetable oil</li>
-            <li>Butter (100g)</li>
-            <li>Lemon</li>
-            <li>Eggs (8)</li>
-            <li>Water (500ml)</li>
-            <li>Sugar</li>
-          </ul>
-          <b>Instructions:</b>
-          <p>
-            Pour the water into a saucepan over medium-low heat and add the
-            butter. Turn off the heat before it reaches boiling. Add the flour,
-            reignite the flame, and stir for 2-3 minutes to prevent the mixture
-            from sticking to the pot.<br />Transfer to a bowl and let it cool
-            for two hours. Grate some lemon zest into the cooled mixture and add
-            4 grams of sugar. Add one egg at a time, blending with an electric
-            mixer (do not add the next egg until the mixture is fully blended,
-            repeat the process for each egg).<br />Bring the oil to a boil in a
-            preferably deep pot over medium heat. Spoon teaspoons of the mixture
-            into the pot, using your fingers to help.<br />Once the fritters
-            turn amber in color, remove them from the pot and sprinkle them with
-            sugar.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- obsidian -->
-    <div id="obsidian" class="floating-window">
-      <div id="obsidianheader" class="applicationheader">Obsidian (ITA)</div>
-      <iframe
-        src="https://fralnz.github.io/appunti/"
-        frameborder="0"
-        width="100%"
-        height="100%"
-      ></iframe>
-    </div>
-
-    <!-- contact -->
-    <div id="contact" class="floating-window">
-      <div id="contactheader" class="applicationheader">Contact Me!</div>
-      <iframe
-        src="contact.html"
-        frameborder="0"
-        width="100%"
-        height="100%"
-      ></iframe>
-    </div>
-
-    <!-- file manager -->
-    <div id="project-folder" class="floating-window">
-      <div id="project-folderheader" class="applicationheader">
+    <!-- DESKTOP VIEW -->
+    <div class="desktop">
+      <header>
+        <p>File</p>
+      </header>
+      <!-- folder icon -->
+      <div class="folder" onclick="showWindow('project-folder')">
+        <img src="media/icons/folder.svg" alt="folder" width="5%" />
         <p>PROJECTS</p>
       </div>
-      <div class="file-manager">
-        <div class="file-manager-left">
-          <div class="file-manager-section">
-            <svg width="50" height="50">
-              <image href="media/icons/folder/recent.svg" />
-            </svg>
-            <p>Recent</p>
+
+      <!-- terminal -->
+      <div id="terminal" class="floating-window" onclick="focusInputLine()">
+        <div id="terminalheader" class="applicationheader"><p>Terminal</p></div>
+        <div id="output"></div>
+        <p>&gt</p>
+        <span id="inputLine" contenteditable="true"></span>
+      </div>
+
+      <!-- notes -->
+      <div id="notes" class="floating-window">
+        <div id="notesheader" class="applicationheader"><p>Notes</p></div>
+        <div class="notesContent">
+          <!-- left side of notes -->
+          <div class="notesLeft">
+            <div class="noteEntry">
+              <p>DELICIOUS RECIPES</p>
+              <p class="date">09/05/2024</p>
+            </div>
           </div>
-          <div id="folder-selected" class="file-manager-section">
-            <svg width="50" height="50">
-              <image href="media/icons/folder/starred.svg" />
-            </svg>
-            <p>Projects</p>
-          </div>
-          <div class="file-manager-section">
-            <svg width="50" height="50">
-              <image href="media/icons/folder/home.svg" />
-            </svg>
-            <p>Home</p>
-          </div>
-          <div class="file-manager-section">
-            <svg width="50" height="50">
-              <image href="media/icons/folder/documents.svg" />
-            </svg>
-            <p>Documents</p>
-          </div>
-        </div>
-        <div class="file-manager-right">
-          <div class="folder-icon-container">
-            <a
-              href="https://github.com/RiccardoSilvestri/NetNote"
-              target="_blank"
-              ><img src="media/icons/folder/NetNote.png" alt="NetNote"
-            /></a>
-            <p>NetNote</p>
+          <div class="notesRight">
+            <!-- pudding -->
+            <h4>Butter-Free Chocolate Pudding</h4>
+            <b>Ingredients:</b>
+            <ul>
+              <li>Milk (250g)</li>
+              <li>Sugar (50g)</li>
+              <li>Cornstarch (20g)</li>
+              <li>Dark chocolate (70g)</li>
+            </ul>
+
+            <b>Instructions:</b>
+            <p>
+              Pour the milk into a saucepan and heat it until it almost boils.
+              Meanwhile, partially melt the chocolate (about 1 minute in the
+              microwave) and mix it well.<br />Combine the melted chocolate with
+              the cornstarch to avoid lumps, stirring with a whisk (you can add
+              a spoonful of the heated milk to facilitate melting).<br />After
+              mixing well, add everything to the saucepan with the milk, kept on
+              low heat. Cook the pudding for a few minutes (continue stirring),
+              then remove from heat and divide it into containers.<br />Let it
+              cool and serve.
+            </p>
+
+            <!-- fritters -->
+            <h4>Fritters</h4>
+            <b>Ingredients:</b>
+            <ul>
+              <li>Flour (300g)</li>
+              <li>Vegetable oil</li>
+              <li>Butter (100g)</li>
+              <li>Lemon</li>
+              <li>Eggs (8)</li>
+              <li>Water (500ml)</li>
+              <li>Sugar</li>
+            </ul>
+            <b>Instructions:</b>
+            <p>
+              Pour the water into a saucepan over medium-low heat and add the
+              butter. Turn off the heat before it reaches boiling. Add the
+              flour, reignite the flame, and stir for 2-3 minutes to prevent the
+              mixture from sticking to the pot.<br />Transfer to a bowl and let
+              it cool for two hours. Grate some lemon zest into the cooled
+              mixture and add 4 grams of sugar. Add one egg at a time, blending
+              with an electric mixer (do not add the next egg until the mixture
+              is fully blended, repeat the process for each egg).<br />Bring the
+              oil to a boil in a preferably deep pot over medium heat. Spoon
+              teaspoons of the mixture into the pot, using your fingers to
+              help.<br />Once the fritters turn amber in color, remove them from
+              the pot and sprinkle them with sugar.
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- obsidian -->
+      <div id="obsidian" class="floating-window">
+        <div id="obsidianheader" class="applicationheader">Obsidian (ITA)</div>
+        <iframe
+          src="https://fralnz.github.io/appunti/"
+          frameborder="0"
+          width="100%"
+          height="100%"
+        ></iframe>
+      </div>
+
+      <!-- contact -->
+      <div id="contact" class="floating-window">
+        <div id="contactheader" class="applicationheader">Contact Me!</div>
+        <iframe
+          src="contact.html"
+          frameborder="0"
+          width="100%"
+          height="100%"
+        ></iframe>
+      </div>
+
+      <!-- file manager -->
+      <div id="project-folder" class="floating-window">
+        <div id="project-folderheader" class="applicationheader">
+          <p>PROJECTS</p>
+        </div>
+        <div class="file-manager">
+          <div class="file-manager-left">
+            <div class="file-manager-section">
+              <svg width="50" height="50">
+                <image href="media/icons/folder/recent.svg" />
+              </svg>
+              <p>Recent</p>
+            </div>
+            <div id="folder-selected" class="file-manager-section">
+              <svg width="50" height="50">
+                <image href="media/icons/folder/starred.svg" />
+              </svg>
+              <p>Projects</p>
+            </div>
+            <div class="file-manager-section">
+              <svg width="50" height="50">
+                <image href="media/icons/folder/home.svg" />
+              </svg>
+              <p>Home</p>
+            </div>
+            <div class="file-manager-section">
+              <svg width="50" height="50">
+                <image href="media/icons/folder/documents.svg" />
+              </svg>
+              <p>Documents</p>
+            </div>
+          </div>
+          <div class="file-manager-right">
+            <div class="folder-icon-container">
+              <a
+                href="https://github.com/RiccardoSilvestri/NetNote"
+                target="_blank"
+                ><img src="media/icons/folder/NetNote.png" alt="NetNote"
+              /></a>
+              <p>NetNote</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dock -->
+      <div class="dock">
+        <a
+          href="https://www.linkedin.com/in/francesco-lanza-4a2353249/"
+          target="_blank"
+          ><img src="media/icons/addressbook.svg" alt="contacts"
+        /></a>
+        <img
+          src="media/icons/internet-mail.svg"
+          alt="mail"
+          onclick="showWindow('contact')"
+        />
+        <a href="https://github.com/fralnz" target="_blank"
+          ><img src="media/icons/github-desktop.svg" alt="github"
+        /></a>
+        <img
+          src="media/icons/terminal.svg"
+          alt="terminal"
+          onclick="showWindow('terminal')"
+        />
+        <img
+          src="media/icons/basket.svg"
+          alt="notes"
+          onclick="showWindow('notes')"
+        />
+        <img
+          src="media/icons/obsidian.svg"
+          alt="obsidian"
+          onclick="showWindow('obsidian')"
+        />
+        <a href="https://www.instagram.com/francesco.lnz/" target="_blank"
+          ><img src="media/icons/instagram.svg" alt="instagram"
+        /></a>
+        <a href="https://www.instagram.com/francesco.lnz/" target="_blank"
+          ><img src="media/icons/shotwell.svg" alt="photos"
+        /></a>
+      </div>
     </div>
 
-    <!-- dock -->
-    <div class="dock">
-      <a
-        href="https://www.linkedin.com/in/francesco-lanza-4a2353249/"
-        target="_blank"
-        ><img src="media/icons/addressbook.svg" alt="contacts"
-      /></a>
-      <img
-        src="media/icons/internet-mail.svg"
-        alt="mail"
-        onclick="showWindow('contact')"
-      />
-      <a href="https://github.com/fralnz" target="_blank"
-        ><img src="media/icons/github-desktop.svg" alt="github"
-      /></a>
-      <img
-        src="media/icons/terminal.svg"
-        alt="terminal"
-        onclick="showWindow('terminal')"
-      />
-      <img
-        src="media/icons/basket.svg"
-        alt="notes"
-        onclick="showWindow('notes')"
-      />
-      <img
-        src="media/icons/obsidian.svg"
-        alt="obsidian"
-        onclick="showWindow('obsidian')"
-      />
-      <a href="https://github.com/" target="_blank"
-        ><img src="media/icons/instagram.svg" alt="instagram"
-      /></a>
-      <a href="https://github.com/" target="_blank"
-        ><img src="media/icons/shotwell.svg" alt="photos"
-      /></a>
+    <!-- MOBILE VIEW -->
+    <div class="mobile">
+      <header>
+        <!-- name div -->
+        <div class="signal">
+          <p>FRANCESCO</p>
+          <svg width="50" height="50">
+            <image href="media/icons/mobile/services.svg" />
+          </svg>
+        </div>
+        <!-- signal div -->
+        <div class="signal">
+          <svg width="50" height="50">
+            <image href="media/icons/mobile/signal.svg" />
+          </svg>
+          <p>LTE</p>
+        </div>
+      </header>
     </div>
   </body>
 </html>

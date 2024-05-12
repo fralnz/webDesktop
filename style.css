@@ -31,112 +31,48 @@
   src: url("media/font/Cantarell-VF.otf");
 }
 
-/* Base styles */
 body {
-  background-image: url("media/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-size: 1rem; /* Use relative font size */
-  line-height: 1.5; /* Adjust line height for readability */
-  color: #333; /* Set a base text color */
-  margin: 0;
-  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media (orientation: portrait) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: initial;
+  }
+}
+
+@media (orientation: landscape) {
+  .desktop {
+    display: initial;
+  }
+  .mobile {
+    display: none;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  body {
+  .desktop {
     font-size: 0.9rem; /* Smaller font size for smaller screens */
-    padding: 10px; /* Add some padding for better readability */
+  }
+  .dock{
+    margin: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  body {
+  .desktop {
     font-size: 0.8rem; /* Even smaller font size for very small screens */
-    padding: 20px; /* Increase padding for very small screens */
   }
-}
-
-header {
-  display: flex;
-  background-color: rgba(51, 51, 51, 0.196);
-  padding: 0;
-  width: 100%;
-  height: 2em;
-}
-
-header p {
-  align-self: center;
-  font-weight: 600;
-  color: white;
-  padding: 0.6em;
-}
-
-.dock {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(215, 215, 215, 0.112);
-  backdrop-filter: blur(5px);
-  margin-top: auto;
-  border-radius: 14px;
-  height: 7em; /* Example height, adjust based on content or desired size */
-  align-self: center;
-  padding: 0.3em 1em;
-  margin-bottom: 0.5em;
-}
-
-.dock a {
-  display: flex; /* Ensure the anchor tag acts as a flex container */
-  justify-content: center; /* Center the image within the anchor tag */
-  align-items: center; /* Vertically center the image */
-  margin: 0;
-  padding: 0;
-}
-
-.dock img {
-  height: 5em;
-  align-self: center;
-  transition: 0.2s ease-in-out;
-  margin: 0.4em;
-  display: inline-block;
-}
-
-.dock img:hover {
-  height: 6em;
-}
-
-.folder {
-  display: flex;
-  flex-direction: column;
-  width: 5em; /* Adjusted width to fit both image and text */
-  margin: 0.3em;
-  cursor: pointer;
-}
-
-.folder img {
-  width: 100%;
-}
-
-.folder p {
-  color: white;
-  font-size: 0.8em; /* Set font size relative to the viewport width */
-  align-self: center;
-  font-weight: 750;
-  width: 100%;
-  text-align: center; /* Center-align the text */
-}
-
-.floating-window {
-  display: none;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
+  .dock{
+    margin: 20px
+  }
 }
