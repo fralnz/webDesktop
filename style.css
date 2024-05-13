@@ -7,23 +7,22 @@
 
 /* Define scrollbar styles */
 ::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #00000000; /* color of the track */
+  background: #00000000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* color of the scroll thumb */
-  border-radius: 6px; /* roundness of the scroll thumb */
+  background: #888;
+  border-radius: 6px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* color of the scroll thumb on hover */
+  background: #555;
 }
 
 @font-face {
@@ -69,7 +68,7 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .desktop {
-    font-size: 0.9rem; /* Smaller font size for smaller screens */
+    font-size: 0.9rem;
   }
   .dock{
     margin: 10px;
@@ -78,7 +77,7 @@ body {
 
 @media (max-width: 480px) {
   .desktop {
-    font-size: 0.8rem; /* Even smaller font size for very small screens */
+    font-size: 0.8rem;
   }
   .dock{
     margin: 20px
