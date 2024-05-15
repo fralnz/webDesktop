@@ -50,9 +50,22 @@ footer{
   border-top: 1px solid #171717;
 }
 
+.footer-element{
+  margin-top: .5rem;
+  width: 3.5rem;
+  height: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: 50%;
+}
+
 .mobile footer svg{
   width: 3.5rem;
   height: 3.5rem;
-  opacity: 50%;
+  align-self: center;
+}
+
+.footer-element p{
   align-self: center;
 }
