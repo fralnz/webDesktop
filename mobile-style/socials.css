@@ -1,13 +1,14 @@
-.socials{
+#socials{
     color: white;
+    display: block;
 }
 
-.socials a{
+#socials a{
     text-decoration: none;
     color: inherit;
 }
 
-.socials h4{
+#socials h4{
     font-size: 1.4rem;
     font-weight: 700;
     padding-left: 2rem;

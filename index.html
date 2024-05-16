@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="window-style/obsidian.css" />
     <link rel="stylesheet" href="window-style/contact.css" />
     <link rel="stylesheet" href="window-style/project-folder.css" />
-    <link rel="stylesheet" href="mobile-style/contacts.css" />
+    <link rel="stylesheet" href="mobile-style/contact.css" />
+    <link rel="stylesheet" href="mobile-style/home.css" />
+    <link rel="stylesheet" href="mobile-style/socials.css" />
     <script defer src="js/rightclick.js"></script>
     <script defer src="js/windows.js"></script>
+    <script defer src="js/mobile.js"></script>
     <title>Francesco Lanza</title>
   </head>
   <body>
@@ -239,7 +242,9 @@
         </div>
       </header>
 
-      <div class="socials">
+      <div id="home"></div>
+      <div id="contact"></div>
+      <div id="socials">
         <h4>Socials</h4>
         <!-- linkedin -->
         <a
@@ -283,20 +288,31 @@
       <footer>
         <div class="footer-element">
           <svg width="50" height="50">
-            <image href="media/icons/mobile/profile.svg" />
+            <image
+              href="media/icons/mobile/profile.svg"
+              alt="profile"
+              onclick="changeMobileWindow('socials')"
+            />
           </svg>
           <p>Contacts</p>
         </div>
         <div class="footer-element">
           <svg width="50" height="50">
-            <image href="media/icons/mobile/home.svg" />
+            <image
+              href="media/icons/mobile/home.svg"
+              alt="home"
+              onclick="changeMobileWindow('home')"
+            />
           </svg>
           <p>Home</p>
         </div>
         <div class="footer-element">
           <svg width="50" height="50">
-            <image href="media/icons/mobile/message.svg" />
-            <!-- TODO: contact form like adding a new contact -->
+            <image
+              href="media/icons/mobile/message.svg"
+              alt="contact"
+              onclick="changeMobileWindow('obsidian')"
+            />
           </svg>
           <p>Messages</p>
         </div>
