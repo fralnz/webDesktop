@@ -46,3 +46,9 @@
     width: auto;
     align-self: center;
 }
+
+.message-contact svg image {
+    filter: none;
+    width: 50%;
+    height: 50%;
+  }
