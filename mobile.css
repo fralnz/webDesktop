@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  color: white;
 }
 .mobile header {
   color: white;
