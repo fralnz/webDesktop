@@ -15,12 +15,17 @@
     <link rel="stylesheet" href="mobile-style/contact.css" />
     <link rel="stylesheet" href="mobile-style/home.css" />
     <link rel="stylesheet" href="mobile-style/socials.css" />
-    <script defer src="js/rightclick.js"></script>
+    
     <script defer src="js/windows.js"></script>
     <script defer src="js/mobile.js"></script>
     <title>Francesco Lanza</title>
   </head>
   <body>
+    <div id="loading-overlay">
+      <img src="media/logo.svg" alt="logo" class="logo">
+      <p>loading...</p>
+      <script src="js/loading.js"></script>
+    </div>
     <!-- DESKTOP VIEW -->
     <div class="desktop">
       <header>
@@ -242,8 +247,12 @@
         </div>
       </header>
 
-      <div id="home"></div>
+      <!-- Home Screen -->
+      <div id="home">
+        HOME
+      </div>
       <div id="contact"></div>
+      <!-- Socials Screen -->
       <div id="socials">
         <h4>Socials</h4>
         <!-- linkedin -->
