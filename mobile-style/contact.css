@@ -42,7 +42,7 @@
 
 .message-contact svg {
     flex-shrink: 0;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: auto;
     align-self: center;
 }
