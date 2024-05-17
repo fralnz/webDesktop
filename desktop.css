@@ -1,100 +1,122 @@
 .desktop {
-    height: 100svh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* This should push the dock to the bottom */
-  }
-  
-  .desktop header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(51, 51, 51, 0.196);
-    padding: 0;
-    width: 100%;
-    height: 2em;
-  }
-  
-  .desktop header p {
-    align-self: center;
-    text-align: center;
-    font-weight: 600;
-    color: white;
-    margin: 0.6rem;
-    padding: 0 .6rem;
-    line-height: 2em;
-    transition: .2s;
-    cursor: pointer;
-  }
+  height: 100svh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This should push the dock to the bottom */
+}
 
-  .desktop header p:hover{
-    background-color: rgba(215, 215, 215, 0.315);;
-    border-radius: 7px;
-  }
-  
-  .dock {
-    position: fixed; /* Position the dock relative to the viewport */
-    bottom: 0; /* Align the dock to the bottom of the viewport */
-    left: 50%; /* Move the dock to the horizontal center */
-    transform: translateX(-50%); /* Center the dock horizontally */
-    width: auto; /* Allow the width to adjust based on content */
-    display: flex;
-    justify-content: center;
-    background-color: rgba(215, 215, 215, 0.112);
-    backdrop-filter: blur(5px);
-    border-radius: 14px;
-    height: 7em;
-    padding: 0.3em 1em;
-    margin-bottom: .5rem; /* Remove any default margin */
-  }
-  
-  
-  .dock a {
-    display: flex; /* Ensure the anchor tag acts as a flex container */
-    justify-content: center; /* Center the image within the anchor tag */
-    align-items: center; /* Vertically center the image */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .dock img {
-    height: 5em;
-    align-self: center;
-    transition: 0.2s ease-in-out;
-    margin: 0.4em;
-    display: inline-block;
-  }
-  
-  .dock img:hover {
-    height: 6em;
-  }
-  
-  .folder {
-    display: flex;
-    flex-direction: column;
-    width: 5em; /* Adjusted width to fit both image and text */
-    margin: 0.3em;
-    cursor: pointer;
-  }
-  
-  .folder img {
-    width: 100%;
-  }
-  
-  .folder p {
-    color: white;
-    font-size: 0.8em; /* Set font size relative to the viewport width */
-    align-self: center;
-    font-weight: 750;
-    width: 100%;
-    text-align: center; /* Center-align the text */
-  }
-  
-  .floating-window {
-    display: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-  }
+.desktop header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(51, 51, 51, 0.196);
+  padding: 0;
+  width: 100%;
+  height: 2em;
+}
+
+.desktop header p {
+  align-self: center;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  padding: 0 0.6rem;
+  line-height: 2em;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.desktop header p:hover {
+  background-color: rgba(215, 215, 215, 0.315);
+  border-radius: 7px;
+}
+
+.dock {
+  position: fixed; /* Position the dock relative to the viewport */
+  bottom: 0; /* Align the dock to the bottom of the viewport */
+  left: 50%; /* Move the dock to the horizontal center */
+  transform: translateX(-50%); /* Center the dock horizontally */
+  width: auto; /* Allow the width to adjust based on content */
+  display: flex;
+  justify-content: center;
+  background-color: rgba(215, 215, 215, 0.112);
+  backdrop-filter: blur(5px);
+  border-radius: 14px;
+  height: 7em;
+  padding: 0.3em 1em;
+  margin-bottom: 0.5rem; /* Remove any default margin */
+}
+
+.dock a {
+  display: flex; /* Ensure the anchor tag acts as a flex container */
+  justify-content: center; /* Center the image within the anchor tag */
+  align-items: center; /* Vertically center the image */
+  margin: 0;
+  padding: 0;
+}
+
+.dock img {
+  height: 5em;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+  margin: 0.4em;
+  display: inline-block;
+}
+
+.dock img:hover {
+  height: 6em;
+}
+
+.folder {
+  display: flex;
+  flex-direction: column;
+  width: 5em; /* Adjusted width to fit both image and text */
+  margin: 0.3em;
+  cursor: pointer;
+}
+
+.folder img {
+  width: 100%;
+}
+
+.folder p {
+  color: white;
+  font-size: 0.8em; /* Set font size relative to the viewport width */
+  align-self: center;
+  font-weight: 750;
+  width: 100%;
+  text-align: center; /* Center-align the text */
+}
+
+.floating-window {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+}
+
+#aboutMe {
+  display: none;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(54, 54, 54, 0.592);
+  backdrop-filter: blur(50px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+#aboutMe .logo {
+  height: 35%;
+  width: auto;
+}
+
+#aboutMe p{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}

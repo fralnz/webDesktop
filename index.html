@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="mobile-style/socials.css" />
     <script defer src="js/windows.js"></script>
     <script defer src="js/mobile.js"></script>
+    <script defer src="js/aboutMe.js"></script>
     <title>Francesco Lanza</title>
   </head>
   <body>
@@ -29,9 +30,16 @@
     <!-- DESKTOP VIEW -->
     <!-- TODO: a div that takes all the window and is hidden on start: about me -->
     <div class="desktop">
+      <div id="aboutMe">
+        <img src="media/logo.svg" alt="logo" class="logo" />
+        <p>
+          Ciao! My name is Francesco Lanza.<br>
+          I'm a Computer Science student, born and raised in Italy.
+        </p>
+      </div>
       <header>
         <p>File</p>
-        <p>About Me</p>
+        <p onclick="displayAboutSection('aboutMe')">About Me</p>
       </header>
       <!-- folder icon -->
       <div class="folder" onclick="showWindow('project-folder')">
