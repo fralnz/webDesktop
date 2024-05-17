@@ -18,9 +18,12 @@ form {
   max-width: 100%;
   max-height: 100%;
   padding: 1.5em;
-  background-color: #2d2d2d;
+  background-color: black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-group {
@@ -42,7 +45,7 @@ form {
   border-radius: 4px;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #2d2d2d;
+  background-color: black;
 }
 
 .form-group textarea {

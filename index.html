@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="mobile-style/socials.css" />
     <script defer src="js/windows.js"></script>
     <script defer src="js/mobile.js"></script>
-    <script defer src="js/aboutMe.js"></script>
+    <script defer src="js/specialWindows.js"></script>
     <title>Francesco Lanza</title>
   </head>
   <body>
@@ -33,7 +33,7 @@
       <div id="aboutMe">
         <img src="media/logo.svg" alt="logo" class="logo" />
         <p>
-          Ciao! My name is Francesco Lanza.<br>
+          Ciao! My name is Francesco Lanza.<br />
           I'm a Computer Science student, born and raised in Italy.
         </p>
       </div>
@@ -227,7 +227,9 @@
         <a href="https://www.instagram.com/francesco.lnz/" target="_blank"
           ><img src="media/icons/instagram.svg" alt="instagram"
         /></a>
-        <a href="https://www.instagram.com/francesco.lnz/" target="_blank"
+        <a
+          href="https://unsplash.com/photos/a-castle-sitting-on-top-of-a-lush-green-hillside-MIGq1g0ws7k"
+          target="_blank"
           ><img src="media/icons/shotwell.svg" alt="photos"
         /></a>
       </div>
@@ -270,9 +272,19 @@
       </div>
       <!-- Chats -->
       <div id="contact-mobile">
+        <div id="contactFormMobile">
+          <div class="contactFormMobileHeader">
+            <img src="media/icons/arrowdown.svg" alt="arrow down" onclick="toggleMobileContact('contactFormMobile')"/>
+          </div>
+          <iframe src="contact.html" frameborder="0"></iframe>
+        </div>
+
         <h4>Chats</h4>
         <!-- Contact Me -->
-        <div class="message-contact">
+        <div
+          class="message-contact"
+          onclick="toggleMobileContact('contactFormMobile')"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50"
@@ -281,7 +293,11 @@
             <!-- Background Circle -->
             <circle cx="25" cy="25" r="25" fill="#9da3ac" />
             <!-- Initials -->
-            <image href="media/icons/internet-mail.svg" x="12.5" y="12.5"></image>
+            <image
+              href="media/icons/internet-mail.svg"
+              x="12.5"
+              y="12.5"
+            ></image>
           </svg>
           <div class="message-contact-text">
             <h5>Contact Me</h5>
@@ -313,7 +329,10 @@
           </svg>
           <div class="message-contact-text">
             <h5>Dwight Schrute</h5>
-            <p>I'm not saying I'm Batman, but if I were, I'd fight crime in Scranton.</p>
+            <p>
+              I'm not saying I'm Batman, but if I were, I'd fight crime in
+              Scranton.
+            </p>
           </div>
         </div>
         <!-- Joey -->
