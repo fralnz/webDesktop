@@ -8,6 +8,7 @@
   
   .desktop header {
     display: flex;
+    justify-content: space-between;
     background-color: rgba(51, 51, 51, 0.196);
     padding: 0;
     width: 100%;
@@ -16,9 +17,19 @@
   
   .desktop header p {
     align-self: center;
+    text-align: center;
     font-weight: 600;
     color: white;
-    padding: 0.6em;
+    margin: 0.6rem;
+    padding: 0 .6rem;
+    line-height: 2em;
+    transition: .2s;
+    cursor: pointer;
+  }
+
+  .desktop header p:hover{
+    background-color: rgba(215, 215, 215, 0.315);;
+    border-radius: 7px;
   }
   
   .dock {
