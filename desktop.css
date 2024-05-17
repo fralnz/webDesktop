@@ -15,6 +15,23 @@
   height: 2em;
 }
 
+.desktop header .right{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.desktop header .right img{
+  height: 100%;
+  padding: .3rem;
+  align-self: center;
+}
+
+.desktop header .right img:hover{
+  background-color: rgba(215, 215, 215, 0.315);
+  border-radius: 7px;
+}
+
 .desktop header p {
   align-self: center;
   text-align: center;

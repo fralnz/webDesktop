@@ -39,7 +39,12 @@
       </div>
       <header>
         <p>File</p>
-        <p onclick="displayAboutSection('aboutMe')">About Me</p>
+        <div class="right">
+          <a href="https://searx.franza.dev/" target="_blank"
+            ><img src="media/icons/system-search.svg" alt=""
+          /></a>
+          <p onclick="displayAboutSection('aboutMe')">About Me</p>
+        </div>
       </header>
       <!-- folder icon -->
       <div class="folder" onclick="showWindow('project-folder')">
@@ -274,7 +279,11 @@
       <div id="contact-mobile">
         <div id="contactFormMobile">
           <div class="contactFormMobileHeader">
-            <img src="media/icons/arrowdown.svg" alt="arrow down" onclick="toggleMobileContact('contactFormMobile')"/>
+            <img
+              src="media/icons/arrowdown.svg"
+              alt="arrow down"
+              onclick="toggleMobileContact('contactFormMobile')"
+            />
           </div>
           <iframe src="contact.html" frameborder="0"></iframe>
         </div>
