@@ -24,12 +24,12 @@ function toggleMobileContact(id) {
 
 function setIntroduction() {
   const introductionText = `Ciao! My name is Francesco Lanza.<br />
-  I'm a Computer Science student, born and raised in Italy.`;
+  I'm a Computer Science student born and raised in Italy, Passionate about everything retro, nature and photography.<br />
+  I strive to create software that is as simple and effective as possible.`;
   const elements = [...document.getElementsByClassName("introduction")];
-  elements.forEach(p => {
+  elements.forEach((p) => {
     p.innerHTML = introductionText;
   });
 }
-
 
 setIntroduction();
