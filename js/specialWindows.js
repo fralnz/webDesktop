@@ -24,8 +24,8 @@ function toggleMobileContact(id) {
 
 function setIntroduction() {
   const introductionText = `Ciao! My name is Francesco Lanza.<br />
-  I'm a Computer Science student born and raised in Italy, Passionate about everything retro, nature and photography.<br />
-  I strive to create software that is as simple and effective as possible.`;
+  I'm a Computer Science student born and raised in Italy, passionate about everything retro, nature and photography.<br />
+  I strive to create software that is as simple and effective as possible, while having fun with it ;)`;
   const elements = [...document.getElementsByClassName("introduction")];
   elements.forEach((p) => {
     p.innerHTML = introductionText;
