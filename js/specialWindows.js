@@ -21,3 +21,15 @@ function toggleMobileContact(id) {
   if (elmnt.style.display == "block") elmnt.style.display = "none";
   else elmnt.style.display = "block";
 }
+
+function setIntroduction() {
+  const introductionText = `Ciao! My name is Francesco Lanza.<br />
+  I'm a Computer Science student, born and raised in Italy.`;
+  const elements = [...document.getElementsByClassName("introduction")];
+  elements.forEach(p => {
+    p.innerHTML = introductionText;
+  });
+}
+
+
+setIntroduction();
