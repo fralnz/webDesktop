@@ -13,12 +13,13 @@
   padding: 0;
   width: 100%;
   height: 2em;
+  backdrop-filter: blur(5px);
 }
 
 .desktop header .right{
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .desktop header .right img{

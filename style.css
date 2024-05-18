@@ -86,7 +86,7 @@ body {
     display: initial;
   }
   body{
-    background-image: url("media/background.jpg");
+    background-image: url("media/background/background-full.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,6 +95,16 @@ body {
   }
   .mobile {
     display: none;
+  }
+  @media screen and (max-width: 1921px){
+    body{
+      background-image: url("media/background/background-1k.jpg");
+    }
+  }
+  @media screen and (max-width: 2561px){
+    body{
+      background-image: url("media/background/background-2k.jpg");
+    }
   }
 }
 
